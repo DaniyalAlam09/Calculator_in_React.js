@@ -1,0 +1,48 @@
+body {
+  background-color: #74ebd5;
+  background-image: linear-gradient(90deg, #74ebd5 0%, #9face6 100%);
+}
+
+.main-grid {
+  justify-content: center;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 6rem);
+  grid-template-rows: minmax(7rem, auto) repeat(5, 5rem);
+}
+.main-grid > button {
+  cursor: pointer;
+  font-size: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid white;
+}
+.main-grid > button:hover,
+.main-grid > button:focus {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.two-space {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 1em;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.previous-grid {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 2rem;
+}
+
+.current-grid {
+  color: white;
+  font-size: 1.5rem;
+}
